@@ -1,5 +1,6 @@
 const mongoose = require('mongoose')
 const config = require('../../config.json')
+const db = require('../db')
 
 const Schema = mongoose.Schema
 
@@ -211,4 +212,4 @@ stage2rankSchema.statics.getGroupCount = async function () {
     }
 }
 
-module.exports = mongoose.model('Rank', stage2rankSchema)
+module.exports = db.dbrank.model('Rank', stage2rankSchema)

@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
-const { unlock } = require('../../routes/tmp')
 const config = require('../../config.json')
+const db = require('../db')
 
 const Schema = mongoose.Schema
 
@@ -60,4 +60,4 @@ const experimentSchema = new Schema(
 // }
 
 
-module.exports = mongoose.model('Experiment', experimentSchema)
+module.exports = db.dbexp.model('Experiment', experimentSchema)

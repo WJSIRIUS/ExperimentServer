@@ -30,13 +30,13 @@
 const mongoose = require('mongoose');
 const config = require('../config.json')
 // const connectionOptions = { useNewUrlParser: true, useUnifiedTopology: true, };
-mongoose.connect(config.url.experiment).then((res, rej) => {
+const dbexp = mongoose.connect(config.url.experiment).then((res, rej) => {
   console.log("Pinged your deployment. You successfully connected to MongoDB experiment!");
 }).catch((err) => {
   console.log(`Error : ${err}. Disconnect from MongoDB.`)
 })
 
-mongoose.connect(config.url.rank).then((res, rej) => {
+const dbrank = mongoose.connect(config.url.rank).then((res, rej) => {
   console.log("Pinged your deployment. You successfully connected to MongoDB rank!");
 }).catch((err) => {
   console.log(`Error : ${err}. Disconnect from MongoDB.`)
@@ -44,6 +44,6 @@ mongoose.connect(config.url.rank).then((res, rej) => {
 mongoose.Promise = global.Promise;
 
 module.exports = {
-  Experiment: require('./models/experiment'),
-  Rank: require('./models/stage2rank'),
+  dbexp: dbexp,
+  dbrank: dbrank,
 }

@@ -1,9 +1,8 @@
-const db = require('./db')
 const mongoose = require('mongoose')
 const config = require('../config.json')
 
-const Experiment = db.Experiment
-const Rank = db.Rank
+const Experiment = require('./models/experiment')
+const Rank = require('./models/stage2rank')
 
 async function createUser() {
 
