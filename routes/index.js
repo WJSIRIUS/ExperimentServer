@@ -50,7 +50,7 @@ function getUserInfo(req, res, next) {
 
 function getSurvey(req, res, next) {
   try {
-    res.sendFile(path.join(__dirname, '../public/survey/questions.json'));
+    res.sendFile(path.join(__dirname, '../public/survey/questions_v1.json'));
   } catch (err) {
     console.log('request get survey error.')
   }
