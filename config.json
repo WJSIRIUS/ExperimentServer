@@ -1,0 +1,24 @@
+{
+    "defaultport": 5000,
+    "url": "mongodb+srv://winteraejane:SMnhEZJi6GtxPVGn@cluster0.ovjoj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+    "group": [
+        1,
+        2,
+        3,
+        4
+    ],
+    "round": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+    ]
+}

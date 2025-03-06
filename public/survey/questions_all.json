@@ -1,0 +1,490 @@
+[
+    {
+        "question_id": 1,
+        "question_description": "您的性别：",
+        "question_type": "radio",
+        "options": {
+            "A": "男",
+            "B": "女"
+        },
+        "has_dependency": false,
+        "dependency": null
+    },
+    {
+        "question_id": 2,
+        "question_description": "您的年龄段：",
+        "question_type": "radio",
+        "options": {
+            "A": "18岁以下",
+            "B": "18（不含）~25",
+            "C": "26（不含）~30",
+            "D": "31（不含）~40",
+            "E": "41（不含）~55",
+            "F": "55以上"
+        },
+        "has_dependency": false,
+        "dependency": null
+    },
+    {
+        "question_id": 3,
+        "question_description": "您的学历（在校学生以目前攻读的学历水平为准）：",
+        "question_type": "radio",
+        "options": {
+            "A": "初中及以下",
+            "B": "高中/中专",
+            "C": "大学专科",
+            "D": "大学本科",
+            "E": "硕士",
+            "F": "博士"
+        },
+        "has_dependency": false,
+        "dependency": null
+    },
+    {
+        "question_id": 4,
+        "question_description": "您的年收入",
+        "question_type": "radio",
+        "options": {
+            "A": "6万人民币及以下",
+            "B": "6万（不含）-12万",
+            "C": "12万（不含）-20万",
+            "D": "20万（不含）-30万",
+            "E": "30万（不含）～50万",
+            "F": "50万及以上"
+        },
+        "has_dependency": false,
+        "dependency": null
+    },
+    {
+        "question_id": 5,
+        "question_description": "您来自",
+        "question_type": "radio",
+        "options": {
+            "A": "一线城市",
+            "B": "新一线城市",
+            "C": "二线及不包含在以上选项的省会城市",
+            "D": "其余城市",
+            "E": "县城与乡镇",
+            "F": "农村"
+        },
+        "has_dependency": false,
+        "dependency": null
+    },
+    {
+        "question_id": 6,
+        "question_description": "您的家庭住宅类型",
+        "question_type": "radio",
+        "options": {
+            "A": "公寓",
+            "B": "平层住宅",
+            "C": "独栋住宅"
+        },
+        "has_dependency": false,
+        "dependency": null
+    },
+    {
+        "question_id": 7,
+        "question_description": "您的家庭人口同住情况",
+        "question_type": "radio",
+        "options": {
+            "A": "独居",
+            "B": "两人居住",
+            "C": "三到四人居住",
+            "D": "五人以上"
+        },
+        "has_dependency": false,
+        "dependency": null
+    },
+    {
+        "question_id": 8,
+        "question_description": "您在校期间居住于",
+        "question_type": "radio",
+        "options": {
+            "A": "校内",
+            "B": "校外"
+        },
+        "has_dependency": false,
+        "dependency": null
+    },
+    {
+        "question_id": 9,
+        "question_description": "您最常用的出行方式",
+        "question_type": "radio",
+        "options": {
+            "A": "步行",
+            "B": "骑行（自行车或电动车）",
+            "C": "骑行（摩托车）",
+            "D": "公共交通工具（地铁或公交车或城际）",
+            "E": "打的",
+            "F": "私家车――新能源",
+            "G": "私家车――油车"
+        },
+        "has_dependency": false,
+        "dependency": null
+    },
+    {
+        "question_id": 10,
+        "question_description": "您每月的外出频率（往返记为一次）",
+        "question_type": "radio",
+        "options": {
+            "A": "每天",
+            "B": "两天一次",
+            "C": "三天一次",
+            "D": "两周三次",
+            "E": "一周一次",
+            "F": "半月一次及以下"
+        },
+        "has_dependency": false,
+        "dependency": null
+    },
+    {
+        "question_id": 11,
+        "question_description": "您的单次通勤距离（往返总和）",
+        "question_type": "radio",
+        "options": {
+            "A": "3km以内",
+            "B": "3km到5km",
+            "C": "5km到10km",
+            "D": "10km到20km",
+            "E": "20km到50km",
+            "F": "50km以上",
+            "G": "我不确定"
+        },
+        "has_dependency": false,
+        "dependency": null
+    },
+    {
+        "question_id": 12,
+        "question_description": "您单次的平均通勤时长（往返总和）",
+        "question_type": "radio",
+        "options": {
+            "A": "＜30min",
+            "B": "＞=30min, ＜60min",
+            "C": "＞=60min, ＜120min",
+            "D": "＞=120min"
+        },
+        "has_dependency": false,
+        "dependency": null
+    },
+    {
+        "question_id": 13,
+        "question_description": "价值观",
+        "question_type": "matrixradio",
+        "options": {
+            "sub_question_description": [
+                "我认为保护自然环境比经济增长更重要",
+                "我愿意为环境保护付出个人的时间和金钱",
+                "我觉得保护生物多样性是人类的责任",
+                "我认为未来的世代有权享受一个健康的环境",
+                "我认为减少浪费是每个人都应该遵守的价值观"
+            ],
+            "sub_options": [
+                "很不认同",
+                "不认同",
+                "一般",
+                "认同",
+                "完全认同"
+            ]
+        },
+        "has_dependency": false,
+        "dependency": null
+    },
+    {
+        "question_id": 14,
+        "question_description": "信念",
+        "question_type": "matrixradio",
+        "options": {
+            "sub_question_description": [
+                "我相信气候变化是一个严重的全球性问题",
+                "我认为人类的工业活动对环境造成了严重的污染",
+                "我相信通过个人的努力可以减少环境污染",
+                "我认为可再生能源可以有效减少对环境的破坏",
+                "我认为减少塑料使用对环境保护非常重要"
+            ],
+            "sub_options": [
+                "很不认同",
+                "不认同",
+                "一般",
+                "认同",
+                "完全认同"
+            ]
+        },
+        "has_dependency": false,
+        "dependency": null
+    },
+    {
+        "question_id": 15,
+        "question_description": "规范",
+        "question_type": "matrixradio",
+        "options": {
+            "sub_question_description": [
+                "我感到有责任每天减少能源消耗",
+                "我认为所有人都有义务进行垃圾分类",
+                "我感到周围的人期望我购买环保产品",
+                "我觉得浪费水资源是一种不负责任的行为",
+                "我会感到内疚如果我没有尽力减少一次性塑料的使用"
+            ],
+            "sub_options": [
+                "很不认同",
+                "不认同",
+                "一般",
+                "认同",
+                "完全认同"
+            ]
+        },
+        "has_dependency": false,
+        "dependency": null
+    },
+    {
+        "question_id": 16,
+        "question_description": "节能设施便利度与节能广告可见度",
+        "question_type": "matrixradio",
+        "options": {
+            "sub_question_description": [
+                "您认为您身边的绿色或节能基础设施的分布",
+                "您认为您身边的低碳节能宣传广告标识的分布"
+            ],
+            "sub_options": [
+                "非常罕见",
+                "较少见",
+                "一般",
+                "比较多",
+                "很丰富"
+            ]
+        },
+        "has_dependency": false,
+        "dependency": null
+    },
+    {
+        "question_id": 17,
+        "question_description": "以下哪些行为属于绿色生活方式?（多选）",
+        "question_type": "checkbox",
+        "options": {
+            "A": "垃圾分类",
+            "B": "使用可重复使用的购物袋",
+            "C": "节约用水",
+            "D": "购买有机食品"
+        },
+        "has_dependency": false,
+        "dependency": null
+    },
+    {
+        "question_id": 18,
+        "question_description": "哪些行为有助于减少碳足迹?（多选）",
+        "question_type": "checkbox",
+        "options": {
+            "A": "使用公共交通",
+            "B": "减少一次性塑料使用",
+            "C": "增加肉类消费",
+            "D": "使用节能电器"
+        },
+        "has_dependency": false,
+        "dependency": null
+    },
+    {
+        "question_id": 19,
+        "question_description": "以下哪一项属于可再生能源?",
+        "question_type": "radio",
+        "options": {
+            "A": "石油",
+            "B": "煤炭",
+            "C": "太阳能",
+            "D": "天然气"
+        },
+        "has_dependency": false,
+        "dependency": null
+    },
+    {
+        "question_id": 20,
+        "question_description": "空气污染的主要来源包括哪些?（多选）",
+        "question_type": "checkbox",
+        "options": {
+            "A": "工业排放",
+            "B": "交通尾气",
+            "C": "植物释放的氧气",
+            "D": "生活垃圾焚烧"
+        },
+        "has_dependency": false,
+        "dependency": null
+    },
+    {
+        "question_id": 21,
+        "question_description": "以下哪一项是保护水资源的有效措施?",
+        "question_type": "radio",
+        "options": {
+            "A": "提高水资源的使用效率",
+            "B": "扩大水资源的开采量",
+            "C": "增加水资源的浪费",
+            "D": "减少水资源的替代品使用"
+        },
+        "has_dependency": false,
+        "dependency": null
+    },
+    {
+        "question_id": 22,
+        "question_description": "您认为在家里节约用电的最有效方法是什么？",
+        "question_type": "radio",
+        "options": {
+            "A": "随时关闭不使用的电器",
+            "B": "使用节能灯泡",
+            "C": "同时使用多个电器",
+            "D": "只在晚上使用电器"
+        },
+        "has_dependency": false,
+        "dependency": null
+    },
+    {
+        "question_id": 23,
+        "question_description": "关于购买家具或家居用品，哪种选择更环保？",
+        "question_type": "radio",
+        "options": {
+            "A": "购买新产品",
+            "B": "购买二手或翻新产品",
+            "C": "每年都更换新的家居用品",
+            "D": "选择非环保材料制作的家具"
+        },
+        "has_dependency": false,
+        "dependency": null
+    },
+    {
+        "question_id": 24,
+        "question_description": "您认为如何更好地减少家庭垃圾？",
+        "question_type": "radio",
+        "options": {
+            "A": "购买可重复使用的物品",
+            "B": "经常购买一次性用品",
+            "C": "不做任何垃圾分类",
+            "D": "多用塑料袋包装垃圾"
+        },
+        "has_dependency": false,
+        "dependency": null
+    },
+    {
+        "question_id": 25,
+        "question_description": "您认为减少空调和取暖设备的使用对环境有什么影响？",
+        "question_type": "radio",
+        "options": {
+            "A": "有助于减少能源消耗",
+            "B": "没有任何影响",
+            "C": "会增加空气污染",
+            "D": "增加电力负荷"
+        },
+        "has_dependency": true,
+        "dependency": {
+            "dependent_question_id": 8,
+            "dependent_option": "B"
+        }
+    },
+    {
+        "question_id": 27,
+        "question_description": "您认为您的电量消耗水准在同学里属于",
+        "question_type": "radio",
+        "options": {
+            "A": "较高",
+            "B": "平均",
+            "C": "较低"
+        },
+        "has_dependency": true,
+        "dependency": {
+            "dependent_question_id": 8,
+            "dependent_option": "A"
+        }
+    },
+    {
+        "question_id": 28,
+        "question_description": "空调使用状况",
+        "question_type": "matrixtext",
+        "options": {
+            "sub_question_description": [
+                "空调日均使用时长（单位：小时）",
+                "空调日均使用温度（单位：摄氏度）"
+            ]
+        },
+        "has_dependency": false,
+        "dependency": null
+    },
+    {
+        "question_id": 29,
+        "question_description": "您是否日常使用电热水器",
+        "question_type": "radio",
+        "options": {
+            "A": "是",
+            "B": "否"
+        },
+        "has_dependency": true,
+        "dependency": {
+            "dependent_question_id": 8,
+            "dependent_option": "B"
+        }
+    },
+    {
+        "question_id": 30,
+        "question_description": "热水器使用状况",
+        "question_type": "matrixtext",
+        "options": {
+            "sub_question_description": [
+                "热水器日均使用时长",
+                "热水器平均设置温度"
+            ]
+        },
+        "has_dependency": true,
+        "dependency": {
+            "dependent_question_id":29,
+            "dependent_option": "A"
+        }
+    },
+    {
+        "question_id": 31,
+        "question_description": "电磁炉使用",
+        "question_type": "radio",
+        "options": {
+            "A": "我家使用电磁炉",
+            "B": "我家不使用电磁炉"
+        },
+        "has_dependency": false,
+        "dependency": null
+    },
+    {
+        "question_id": 32,
+        "question_description": "电磁炉使用状况",
+        "question_type": "matrixtext",
+        "options": {
+            "sub_question_description": [
+                "电磁炉日均使用时长",
+                "最常使用电磁炉的功率档位（单位：kw）"
+            ]
+        },
+        "has_dependency": true,
+        "dependency": {
+            "dependent_question_id":31,
+            "dependent_option": "A"
+        }
+    },
+    {
+        "question_id": 33,
+        "question_description": "洗衣机使用频率",
+        "question_type": "radio",
+        "options": {
+            "A": "一天一次及以上",
+            "B": "两天一次",
+            "C": "三天一次",
+            "D": "一周一次及以下"
+        },
+        "has_dependency": true,
+        "dependency": {
+            "dependent_question_id": 8,
+            "dependent_option": "B"
+        }
+    },
+    {
+        "question_id": 35,
+        "question_description": "您更倾向于哪种碳市场模式",
+        "question_type": "radio",
+        "options": {
+            "A": "发放配额的个人碳交易模式",
+            "B": "赚取碳积分用于交易的碳普惠模式"
+        },
+        "has_dependency": false,
+        "dependency": null
+    }
+]

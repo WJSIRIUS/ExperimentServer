@@ -1,0 +1,94 @@
+[
+    {
+        "question_id": 10,
+        "question_description": "您每月的外出频率（往返记为一次）",
+        "question_type": "radio",
+        "options": {
+            "A": "每天",
+            "B": "两天一次",
+            "C": "三天一次",
+            "D": "两周三次",
+            "E": "一周一次",
+            "F": "半月一次及以下"
+        },
+        "has_dependency": false,
+        "dependency": null
+    },
+    {
+        "question_id": 11,
+        "question_description": "您的单次通勤距离（往返总和）",
+        "question_type": "radio",
+        "options": {
+            "A": "3km以内",
+            "B": "3km到5km",
+            "C": "5km到10km",
+            "D": "10km到20km",
+            "E": "20km到50km",
+            "F": "50km以上",
+            "G": "我不确定"
+        },
+        "has_dependency": false,
+        "dependency": null
+    },
+    {
+        "question_id": 13,
+        "question_description": "价值观",
+        "question_type": "matrixradio",
+        "options": {
+            "sub_question_description": [
+                "我认为保护自然环境比经济增长更重要",
+                "我愿意为环境保护付出个人的时间和金钱",
+                "我觉得保护生物多样性是人类的责任",
+                "我认为未来的世代有权享受一个健康的环境",
+                "我认为减少浪费是每个人都应该遵守的价值观"
+            ],
+            "sub_options": [
+                "很不认同",
+                "不认同",
+                "一般",
+                "认同",
+                "完全认同"
+            ]
+        },
+        "has_dependency": false,
+        "dependency": null
+    },
+
+    {
+        "question_id": 18,
+        "question_description": "哪些行为有助于减少碳足迹?（多选）",
+        "question_type": "checkbox",
+        "options": {
+            "A": "使用公共交通",
+            "B": "减少一次性塑料使用",
+            "C": "增加肉类消费",
+            "D": "使用节能电器"
+        },
+        "has_dependency": false,
+        "dependency": null
+    },
+    {
+        "question_id": 26,
+        "question_description": "上个月用电量（单位：千瓦时/度）",
+        "question_type": "blank",
+        "options": {},
+        "has_dependency": false,
+        "dependency": {
+            "dependent_question_id": 8,
+            "dependent_option": "B"
+        }
+    },
+    {
+        "question_id": 28,
+        "question_description": "空调使用状况",
+        "question_type": "matrixtext",
+        "options": {
+            "sub_question_description": [
+                "空调日均使用时长（单位：小时）",
+                "空调日均使用温度（单位：摄氏度）"
+            ]
+        },
+        "has_dependency": false,
+        "dependency": null
+    }
+]
