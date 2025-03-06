@@ -1,0 +1,24 @@
+version: '3.9'
+services:
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mongo
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/experiment
+
+  mongo:
+    image: mongo:7.0
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=expadmin
+      - MONGO_INITDB_ROOT_PASSWORD=88888888
+      - MONGO_INITDB_DATABASE=experiment
+
+volumes:
+  mongo-data:

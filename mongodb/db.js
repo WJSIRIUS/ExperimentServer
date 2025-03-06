@@ -30,8 +30,14 @@
 const mongoose = require('mongoose');
 const config = require('../config.json')
 // const connectionOptions = { useNewUrlParser: true, useUnifiedTopology: true, };
-mongoose.connect(config.url).then((res, rej) => {
-  console.log("Pinged your deployment. You successfully connected to MongoDB!");
+mongoose.connect(config.url.experiment).then((res, rej) => {
+  console.log("Pinged your deployment. You successfully connected to MongoDB experiment!");
+}).catch((err) => {
+  console.log(`Error : ${err}. Disconnect from MongoDB.`)
+})
+
+mongoose.connect(config.url.rank).then((res, rej) => {
+  console.log("Pinged your deployment. You successfully connected to MongoDB rank!");
 }).catch((err) => {
   console.log(`Error : ${err}. Disconnect from MongoDB.`)
 })
