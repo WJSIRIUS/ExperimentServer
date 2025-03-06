@@ -1,6 +1,7 @@
 const mongoose = require('mongoose')
 const config = require('../../config.json')
-const db = require('../db')
+import { dbrank } from '../db'
+
 
 const Schema = mongoose.Schema
 
@@ -184,7 +185,7 @@ stage2rankSchema.statics.getEC1CC0Rank = async function (data) {
         const cc = await this.countDocuments(filter0)
         const total = await this.countDocuments({ "groupid": data.groupid, "rounddata.roundid": data.roundid })
         // noexist
-        return [ total, ec, cc ]
+        return [total, ec, cc]
     } catch (err) {
         console.log(`getRank ERROR: ${err}`)
 
@@ -212,4 +213,4 @@ stage2rankSchema.statics.getGroupCount = async function () {
     }
 }
 
-module.exports = db.dbrank.model('Rank', stage2rankSchema)
+module.exports = dbrank.model('Rank', stage2rankSchema)

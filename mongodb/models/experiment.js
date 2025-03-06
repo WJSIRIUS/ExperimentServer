@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 const config = require('../../config.json')
-const db = require('../db')
+import {dbexp} from '../db'
 
 const Schema = mongoose.Schema
 
@@ -60,4 +60,4 @@ const experimentSchema = new Schema(
 // }
 
 
-module.exports = db.dbexp.model('Experiment', experimentSchema)
+module.exports = dbexp.model('Experiment', experimentSchema)
