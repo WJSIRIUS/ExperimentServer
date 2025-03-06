@@ -96,17 +96,6 @@
         "dependency": null
     },
     {
-        "question_id": 8,
-        "question_description": "您在校期间居住于",
-        "question_type": "radio",
-        "options": {
-            "A": "校内",
-            "B": "校外"
-        },
-        "has_dependency": false,
-        "dependency": null
-    },
-    {
         "question_id": 9,
         "question_description": "您最常用的出行方式",
         "question_type": "radio",
@@ -369,15 +358,20 @@
             "C": "会增加空气污染",
             "D": "增加电力负荷"
         },
-        "has_dependency": true,
-        "dependency": {
-            "dependent_question_id": 8,
-            "dependent_option": "B"
-        }
+        "has_dependency": false,
+        "dependency": null
+    },
+    {
+        "question_id": 26,
+        "question_description": "上个月用电量（单位：千瓦时/度）",
+        "question_type": "blank",
+        "options": {},
+        "has_dependency": false,
+        "dependency": null
     },
     {
         "question_id": 27,
-        "question_description": "您认为您的电量消耗水准在同学里属于",
+        "question_description": "您认为您的电量消耗水准在社会上属于",
         "question_type": "radio",
         "options": {
             "A": "较高",
@@ -385,10 +379,7 @@
             "C": "较低"
         },
         "has_dependency": true,
-        "dependency": {
-            "dependent_question_id": 8,
-            "dependent_option": "A"
-        }
+        "dependency": null
     },
     {
         "question_id": 28,
@@ -412,10 +403,7 @@
             "B": "否"
         },
         "has_dependency": true,
-        "dependency": {
-            "dependent_question_id": 8,
-            "dependent_option": "B"
-        }
+        "dependency": null
     },
     {
         "question_id": 30,
@@ -429,7 +417,7 @@
         },
         "has_dependency": true,
         "dependency": {
-            "dependent_question_id":29,
+            "dependent_question_id": 29,
             "dependent_option": "A"
         }
     },
@@ -456,7 +444,7 @@
         },
         "has_dependency": true,
         "dependency": {
-            "dependent_question_id":31,
+            "dependent_question_id": 31,
             "dependent_option": "A"
         }
     },
@@ -471,10 +459,15 @@
             "D": "一周一次及以下"
         },
         "has_dependency": true,
-        "dependency": {
-            "dependent_question_id": 8,
-            "dependent_option": "B"
-        }
+        "dependency": null
+    },
+    {
+        "question_id": 34,
+        "question_description": "您认为您家除了上述提到的电器还有其他大功率电器吗？\n(即除了空调 电热水器 电磁炉 洗衣机以外的高耗能电器)",
+        "question_type": "blank",
+        "options": {},
+        "has_dependency": false,
+        "dependency": null
     },
     {
         "question_id": 35,
