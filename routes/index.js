@@ -1,6 +1,6 @@
 let express = require('express');
 let router = express.Router();
-let dbaction = require('../mongodb/dbservice')
+let dbservice = require('../mongodb/dbservice')
 const path = require('path');
 // RESTful don't preserve session state, so use the userid to identify person
 // clear unfinish userid periodically to pretect data 
@@ -32,7 +32,7 @@ function getUserInfo(req, res, next) {
   // group id (int) from 1 to 4 
   // const groupid = Math.floor(Math.random() * 3) + 1
   // const userid = 1000
-  dbaction.createUser().then((success, rej) => {
+  dbservice.createUser().then((success, rej) => {
     if (success) {
       const { userid, groupid } = success
       const user = {
@@ -63,7 +63,7 @@ function getRoundRank(req, res, next) {
   // already json
   // const data = JSON.parse(req.body)
   const data = req.body
-  dbaction.getRank(data).then((success, rej) => {
+  dbservice.getRank(data).then((success, rej) => {
     if (success) {
 
       // 解构赋值要同名
@@ -88,7 +88,7 @@ function getRoundRank(req, res, next) {
 function postSubmitData(req, res, next) {
   // const submitdata = JSON.parse(req.body)
   const submitdata = req.body
-  dbaction.postExperimentData(submitdata).then((success, rej) => {
+  dbservice.postExperimentData(submitdata).then((success, rej) => {
     if (success) {
       res.send({ 'reqstatus': 1, 'reqtype': 'postdata' });
     }

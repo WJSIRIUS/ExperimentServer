@@ -213,4 +213,6 @@ stage2rankSchema.statics.getGroupCount = async function () {
     }
 }
 
-module.exports = dbrank.model('Rank', stage2rankSchema)
+const Rank = dbrank.model('Rank', stage2rankSchema)
+
+export default Rank

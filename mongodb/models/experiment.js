@@ -59,5 +59,5 @@ const experimentSchema = new Schema(
 //     this.remove({ progress: { $in: ['onstage1', 'onstage2'] } })
 // }
 
-
-module.exports = dbexp.model('Experiment', experimentSchema)
+const Experiment = dbexp.model('Experiment', experimentSchema)
+export default Experiment

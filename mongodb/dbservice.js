@@ -1,8 +1,8 @@
 const mongoose = require('mongoose')
 const config = require('../config.json')
 
-const Experiment = require('./models/experiment')
-const Rank = require('./models/stage2rank')
+import Experiment from './models/experiment'
+import Rank from './models/stage2rank'
 
 async function createUser() {
 
