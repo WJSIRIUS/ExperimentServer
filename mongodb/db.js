@@ -29,17 +29,25 @@
 
 const mongoose = require('mongoose');
 const config = require('../config.json')
-// const connectionOptions = { useNewUrlParser: true, useUnifiedTopology: true, };
-export const dbexp = mongoose.connect(config.url.experiment).then((res, rej) => {
-  console.log("Pinged your deployment. You successfully connected to MongoDB experiment!");
-}).catch((err) => {
-  console.log(`Error : ${err}. Disconnect from MongoDB.`)
-})
 
-export const dbrank = mongoose.connect(config.url.rank).then((res, rej) => {
-  console.log("Pinged your deployment. You successfully connected to MongoDB rank!");
-}).catch((err) => {
-  console.log(`Error : ${err}. Disconnect from MongoDB.`)
-})
+// const connectionOptions = { useNewUrlParser: true, useUnifiedTopology: true, };
+const dbexp = mongoose.createConnection(config.url.experiment,)
+const dbrank = mongoose.createConnection(config.url.rank)
+
 mongoose.Promise = global.Promise;
 
+process.on('SIGINT', async () => {
+  try {
+    await db1Connection.close();
+    await db2Connection.close();
+    console.log('Database connections closed');
+    process.exit(0);
+  } catch (error) {
+    console.error('Error closing database connections:', error);
+    process.exit(1);
+  }
+});
+
+module.exports = {
+  dbexp, dbrank
+}

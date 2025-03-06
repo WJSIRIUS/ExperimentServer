@@ -1,7 +1,10 @@
 {
     "defaultport": 5000,
     "url_atlas": "mongodb+srv://winteraejane:SMnhEZJi6GtxPVGn@cluster0.ovjoj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
-        "url": "mongodb://admin:88888888@localhost:27017/experiment?authSource=admin",
+    "url": {
+        "experiment": "mongodb://admin:88888888@localhost:27017/experiment?authSource=admin",
+        "rank": "mongodb://admin:88888888@localhost:27017/rank?authSource=admin"
+    },
     "group": [
         1,
         2,

@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 const config = require('../../config.json')
-import {dbexp} from '../db'
+const { dbexp } = require('../db')
 
 const Schema = mongoose.Schema
 
@@ -59,5 +59,4 @@ const experimentSchema = new Schema(
 //     this.remove({ progress: { $in: ['onstage1', 'onstage2'] } })
 // }
 
-const Experiment = dbexp.model('Experiment', experimentSchema)
-export default Experiment
+module.exports = dbexp.model('Experiment', experimentSchema)
